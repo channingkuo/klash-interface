@@ -36,7 +36,7 @@ struct ProxyGroupRowView: View {
 			}
 			
 			HStack {
-				Text(proxyGroup.type.rawValue)
+                Text(proxyGroup.type.rawString)
 				Spacer()
 				if let proxy = proxyGroup.currentProxy {
 					Text(hideProxyNames.hide

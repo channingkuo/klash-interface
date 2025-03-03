@@ -76,7 +76,7 @@ struct ProxyGroupView: View {
 				 ? String(proxyGroup.id.hiddenID)
 					: proxyGroup.name)
 				.font(.system(size: 17))
-			Text(proxyGroup.type.rawValue)
+            Text(proxyGroup.type.rawString)
 				.font(.system(size: 13))
 				.foregroundColor(.secondary)
 			Text("\(proxyGroup.proxies.count)")

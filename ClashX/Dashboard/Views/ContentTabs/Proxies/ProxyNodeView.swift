@@ -44,7 +44,7 @@ struct ProxyNodeView: View {
 			Spacer(minLength: 6)
 				.show(isVisible: !isBuiltInProxy)
 			HStack(alignment: .center) {
-				Text(proxy.type.rawValue)
+                Text(proxy.type.rawString)
 					.foregroundColor(.secondary)
 					.font(.system(size: 12))
 				

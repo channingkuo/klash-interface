@@ -9,39 +9,58 @@
 import Cocoa
 import SwiftyJSON
 
-enum ClashProxyType: String, Codable, CaseIterable {
-    case urltest = "URLTest"
-    case fallback = "Fallback"
-    case loadBalance = "LoadBalance"
-    case select = "Selector"
-    case direct = "Direct"
-    case reject = "Reject"
-    case shadowsocks = "Shadowsocks"
-    case shadowsocksR = "ShadowsocksR"
-    case socks5 = "Socks5"
-    case http = "Http"
-    case vmess = "Vmess"
-    case snell = "Snell"
-    case trojan = "Trojan"
-    case relay = "Relay"
-
-    case vless = "Vless"
-    case hysteria = "Hysteria"
-    case wireguard = "Wireguard"
-    case tuic = "Tuic"
-	case hysteria2 = "Hysteria2"
-	case ssh = "SSH"
-    case mieru = "mieru"
-	
-    case pass = "Pass"
-
-    case unknown = "Unknown"
+enum ClashProxyType: Codable, Equatable {
+    
+    case urltest
+    case fallback
+    case loadBalance
+    case select
+    case relay
+    
+    case direct
+    case reject
+    case pass
+    
+    case proxy(String)
+    
+    private static let standardTypes: [String: ClashProxyType] = [
+        "URLTest": .urltest,
+        "Fallback": .fallback,
+        "LoadBalance": .loadBalance,
+        "Selector": .select,
+        "Relay": .relay,
+        "Direct": .direct,
+        "Reject": .reject,
+        "Pass": .pass
+    ]
+    
+    var rawString: String {
+        switch self {
+        case .proxy(let string):
+            return string
+        default:
+            return ClashProxyType.standardTypes.first {
+                $0.value == self
+            }?.key ?? "Unknown"
+        }
+    }
+    
+    init(rawString: String) {
+        let type = ClashProxyType.standardTypes.first {
+            $0.key.caseInsensitiveCompare(rawString) == .orderedSame
+        }?.value
+        
+        if let type {
+            self = type
+        } else {
+            self = .proxy(rawString)
+        }
+    }
 	
 	init(from decoder: Decoder) throws {
 		let container = try decoder.singleValueContainer()
 		let rawString = try container.decode(String.self)
-		
-		self = ClashProxyType.allCases.first(where: { $0.rawValue.caseInsensitiveCompare(rawString) == .orderedSame }) ?? .unknown
+        self = .init(rawString: rawString)
 	}
 	
 

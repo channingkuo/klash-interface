@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDisplayName</key>
+	<string>Klash</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>ClashX use location info to detect your current WiFi network SSID name and provide the auto suspend services.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -94,7 +96,7 @@
 	<key>NSAppleScriptEnabled</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2021年 yichengchen. All rights reserved.</string>
+	<string>Copyright © 2025年 ChanningKuo. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
@@ -110,7 +112,7 @@
 			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
 			<true/>
 			<key>NSUbiquitousContainerName</key>
-			<string>ClashX Meta</string>
+			<string>Klash</string>
 			<key>NSUbiquitousContainerSupportedFolderLevels</key>
 			<string>Any</string>
 		</dict>

@@ -276,7 +276,6 @@
 		01E33AB429B5C5E300FD1006 /* menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon@2x.png"; sourceTree = "<group>"; };
 		01EF335F2B98D03B00D1DBD9 /* ProxyConfigHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfigHelper.swift; sourceTree = "<group>"; };
 		01EF33612B98D3A700D1DBD9 /* ProxyConfigRemoteProcessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfigRemoteProcessProtocol.swift; sourceTree = "<group>"; };
-		01F336442AD10D0B0048AF77 /* ClashX Meta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ClashX Meta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FBC62F2B9C2B0800810BFF /* ClashProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashProcess.swift; sourceTree = "<group>"; };
 		2753484F2A3082FD0077B458 /* TunModeSettingCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunModeSettingCommand.swift; sourceTree = "<group>"; };
 		4905A2C42A2058B000AEDA2E /* GlobalShortCutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalShortCutViewController.swift; sourceTree = "<group>"; };
@@ -361,6 +360,7 @@
 		8A2BBEA627A03ACB0081EBEF /* ProxySetting.sdef */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ProxySetting.sdef; sourceTree = "<group>"; };
 		8ACD21BA27A04C7800BC4632 /* ProxySettingCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxySettingCommand.swift; sourceTree = "<group>"; };
 		8ACD21BC27A04ED500BC4632 /* ProxyModeChangeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyModeChangeCommand.swift; sourceTree = "<group>"; };
+		B085A0F52D92637B003ACE9C /* Klash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F910AA23240134AF00116E95 /* ProxyGroupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyGroupMenu.swift; sourceTree = "<group>"; };
 		F915A4612366ADEF004840BE /* ClashConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClashConnection.swift; sourceTree = "<group>"; };
 		F9203A25236342820020D57D /* AppDelegate+..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+..swift"; sourceTree = "<group>"; };
@@ -780,7 +780,7 @@
 			isa = PBXGroup;
 			children = (
 				F9A7C0692306E874007163C7 /* com.metacubex.ClashX.ProxyConfigHelper */,
-				01F336442AD10D0B0048AF77 /* ClashX Meta.app */,
+				B085A0F52D92637B003ACE9C /* Klash.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -871,9 +871,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01F335B32AD10D0B0048AF77 /* ClashX Meta */ = {
+		01F335B32AD10D0B0048AF77 /* Klash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01F336412AD10D0B0048AF77 /* Build configuration list for PBXNativeTarget "ClashX Meta" */;
+			buildConfigurationList = 01F336412AD10D0B0048AF77 /* Build configuration list for PBXNativeTarget "Klash" */;
 			buildPhases = (
 				01F335CC2AD10D0B0048AF77 /* Sources */,
 				01F336232AD10D0B0048AF77 /* Frameworks */,
@@ -885,7 +885,7 @@
 			dependencies = (
 				01F335B42AD10D0B0048AF77 /* PBXTargetDependency */,
 			);
-			name = "ClashX Meta";
+			name = Klash;
 			packageProductDependencies = (
 				01F335B62AD10D0B0048AF77 /* KeyboardShortcuts */,
 				01F335B82AD10D0B0048AF77 /* Alamofire */,
@@ -904,7 +904,7 @@
 				01BCDB202C9EEE260028FA94 /* Sparkle */,
 			);
 			productName = ClashX;
-			productReference = 01F336442AD10D0B0048AF77 /* ClashX Meta.app */;
+			productReference = B085A0F52D92637B003ACE9C /* Klash.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F9A7C0682306E874007163C7 /* com.metacubex.ClashX.ProxyConfigHelper */ = {
@@ -971,7 +971,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				01F335B32AD10D0B0048AF77 /* ClashX Meta */,
+				01F335B32AD10D0B0048AF77 /* Klash */,
 				F9A7C0682306E874007163C7 /* com.metacubex.ClashX.ProxyConfigHelper */,
 			);
 		};
@@ -1212,6 +1212,7 @@
 					"$(PROJECT_DIR)/ClashX/Support\\ Files",
 				);
 				INFOPLIST_FILE = ClashX/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Klash;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1224,7 +1225,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = v1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.metacubex.ClashX.meta;
-				PRODUCT_NAME = "ClashX Meta";
+				PRODUCT_NAME = Klash;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_PNG_TEXT = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1259,6 +1260,7 @@
 					"$(PROJECT_DIR)/ClashX/Support\\ Files",
 				);
 				INFOPLIST_FILE = ClashX/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Klash;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1272,7 +1274,7 @@
 				MARKETING_VERSION = v1.0;
 				OTHER_CODE_SIGN_FLAGS = "--timestamp";
 				PRODUCT_BUNDLE_IDENTIFIER = com.metacubex.ClashX.meta;
-				PRODUCT_NAME = "ClashX Meta";
+				PRODUCT_NAME = Klash;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_PNG_TEXT = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
@@ -1490,7 +1492,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01F336412AD10D0B0048AF77 /* Build configuration list for PBXNativeTarget "ClashX Meta" */ = {
+		01F336412AD10D0B0048AF77 /* Build configuration list for PBXNativeTarget "Klash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01F336422AD10D0B0048AF77 /* Debug */,

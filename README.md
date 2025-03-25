@@ -1,31 +1,21 @@
 <h1 align="center">
-  <img src="https://github.com/MetaCubeX/Clash.Meta/raw/Meta/Meta.png" alt="Clash" width="200">
+  <img src="https://github.com/channingkuo/klash-kernel/blob/master/klash-kernel.png" alt="Klash" width="200">
   <br>
-  ClashX
+  Klash
   <br>
 </h1>
 
 
-A rule based proxy For Mac base on [Clash Meta](https://github.com/MetaCubeX/Clash.Meta).
-
-
-
-## 注意
-- ClashX / ClashX Pro / ClashX Meta 只是一个代理工具，不提供任何代理服务器。如果服务器不可用或与服务器续费有关的问题，请与您的提供商联系。
-- ClashX / ClashX Pro / ClashX Meta 目前并没有创建官网。凡是声称是 ClashX / ClashX Pro / ClashX Meta 官网的一定是骗子。
+A rule based proxy For Mac base on [Klash interface](https://github.com/channingkuo/klash-interface).
 
 ## Features
 
 - Clash.Meta Core
 - Tun mode support
 
-## Install
-
-You can download from [Release](https://github.com/MetaCubeX/Clash.Meta/releases) page
-
-
 ## Build
 - Make sure have python3 and golang installed in your computer.
+- Read .github/workflows/main.yml, all the build info in there.
 
 - Install Golang
   ```

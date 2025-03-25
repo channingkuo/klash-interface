@@ -17,7 +17,7 @@
         <!--Settings-->
         <scene sceneID="7zJ-aQ-tNg">
             <objects>
-                <tabViewController title="Settings" storyboardIdentifier="SettingTabViewController" showSeguePresentationStyle="single" selectedTabViewItemIndex="0" id="LAj-p8-9gd" customClass="SettingTabViewController" customModule="ClashX_Meta" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController title="Settings" storyboardIdentifier="SettingTabViewController" showSeguePresentationStyle="single" selectedTabViewItemIndex="0" id="LAj-p8-9gd" customClass="SettingTabViewController" customModule="Klash" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="General" identifier="general" image="gearshape" catalog="system" id="Ltt-Vq-Hh1"/>
                         <tabViewItem image="keyboard" catalog="system" id="gnz-rO-Jv7"/>
@@ -47,7 +47,7 @@
         <!--General-->
         <scene sceneID="XxM-Ti-kkw">
             <objects>
-                <viewController title="General" showSeguePresentationStyle="single" id="kma-mp-ncL" customClass="GeneralSettingViewController" customModule="ClashX_Meta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="General" showSeguePresentationStyle="single" id="kma-mp-ncL" customClass="GeneralSettingViewController" customModule="Klash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" misplaced="YES" id="dpe-v8-fF7">
                         <rect key="frame" x="0.0" y="0.0" width="472" height="674"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -706,7 +706,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ClashX_Meta" customModuleProvider="target">
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Klash" customModuleProvider="target">
                     <connections>
                         <outlet property="allowFromLanMenuItem" destination="Vz8-7n-vx6" id="Fzz-EG-huC"/>
                         <outlet property="apiPortMenuItem" destination="hwG-qf-DeZ" id="d6K-i7-yCo"/>
@@ -892,9 +892,9 @@
                                 <action selector="actionMoreSetting:" target="Voe-Tx-rLC" id="PF2-an-kBo"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Meta" id="F3d-AD-N6E">
+                        <menuItem title="Kuo" id="F3d-AD-N6E">
                             <modifierMask key="keyEquivalentModifierMask"/>
-                            <menu key="submenu" title="Meta" id="ji6-hK-w0I">
+                            <menu key="submenu" title="Kuo" id="ji6-hK-w0I">
                                 <items>
                                     <menuItem title="Sniffer" id="mk5-fI-KvW">
                                         <modifierMask key="keyEquivalentModifierMask"/>
@@ -935,11 +935,8 @@
                                             <segue destination="UWQ-O3-RVk" kind="show" id="ZDv-Fo-P5y"/>
                                         </connections>
                                     </menuItem>
-                                    <menuItem title="Check Update" id="p0T-J8-Emx">
+                                    <menuItem title="Check Update" hidden="YES" id="p0T-J8-Emx">
                                         <modifierMask key="keyEquivalentModifierMask"/>
-                                        <connections>
-                                            <action selector="checkForUpdates:" target="fth-rt-saN" id="lpG-w8-ucv"/>
-                                        </connections>
                                     </menuItem>
                                     <menuItem title="Log level" id="3Da-fL-Mzr">
                                         <modifierMask key="keyEquivalentModifierMask"/>
@@ -1028,7 +1025,6 @@
                     </items>
                 </menu>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-                <customObject id="fth-rt-saN" customClass="SPUStandardUpdaterController"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="dwS-am-r7H"/>
             </objects>
@@ -1037,7 +1033,7 @@
         <!--About View Controller-->
         <scene sceneID="bW6-wi-r8Q">
             <objects>
-                <viewController showSeguePresentationStyle="single" id="UWQ-O3-RVk" customClass="AboutViewController" customModule="ClashX_Meta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController showSeguePresentationStyle="single" id="UWQ-O3-RVk" customClass="AboutViewController" customModule="Klash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="JCR-G0-H6V">
                         <rect key="frame" x="0.0" y="0.0" width="451" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1113,7 +1109,7 @@
                                     <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BaZ-rB-g4s">
                                         <rect key="frame" x="100" y="0.0" width="288" height="40"/>
                                         <subviews>
-                                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q4m-SB-uHV" customClass="HyperlinkTextField" customModule="ClashX_Meta" customModuleProvider="target">
+                                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q4m-SB-uHV" customClass="HyperlinkTextField" customModule="Klash" customModuleProvider="target">
                                                 <rect key="frame" x="-2" y="24" width="276" height="16"/>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="https://github.com/channingkuo/klash-kernel" id="Bej-j7-KKV">
                                                     <font key="font" metaFont="system"/>
@@ -1127,7 +1123,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="href" value="https://github.com/channingkuo/klash-kernel"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bSi-kz-Dkf" customClass="HyperlinkTextField" customModule="ClashX_Meta" customModuleProvider="target">
+                                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bSi-kz-Dkf" customClass="HyperlinkTextField" customModule="Klash" customModuleProvider="target">
                                                 <rect key="frame" x="-2" y="0.0" width="292" height="16"/>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="https://github.com/channingkuo/klash-interface" id="9ox-Fc-Wk3">
                                                     <font key="font" metaFont="system"/>
@@ -1210,8 +1206,8 @@
         <!--Remote Configs-->
         <scene sceneID="lXv-k7-YEi">
             <objects>
-                <viewController title="Remote Configs" identifier="RemoteConfigViewController" storyboardIdentifier="RemoteConfigViewController" showSeguePresentationStyle="single" id="6WI-Hi-v9j" customClass="RemoteConfigViewController" customModule="ClashX_Meta" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="BIo-GY-n0C">
+                <viewController title="Remote Configs" identifier="RemoteConfigViewController" storyboardIdentifier="RemoteConfigViewController" showSeguePresentationStyle="single" id="6WI-Hi-v9j" customClass="RemoteConfigViewController" customModule="Klash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="BIo-GY-n0C">
                         <rect key="frame" x="0.0" y="0.0" width="404" height="256"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -1280,7 +1276,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="nameCell" id="nJ2-CL-UMO">
-                                                            <rect key="frame" x="185.06696397039059" y="1" width="86" height="17"/>
+                                                            <rect key="frame" x="185" y="1" width="86" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="ma1-VU-D1q">
@@ -1319,7 +1315,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="timeCell" id="EV1-my-fwa">
-                                                            <rect key="frame" x="274.13392794078118" y="1" width="56" height="17"/>
+                                                            <rect key="frame" x="274" y="1" width="56" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="giF-oe-BsQ">
@@ -1442,8 +1438,8 @@
         <!--External Control-->
         <scene sceneID="TO5-jN-VsZ">
             <objects>
-                <viewController title="External Manager" identifier="ExternalControlViewController" storyboardIdentifier="ExternalControlViewController" showSeguePresentationStyle="single" id="s6y-wL-pnr" userLabel="External Control" customClass="ExternalControlViewController" customModule="ClashX_Meta" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="Gao-fa-Dwr">
+                <viewController title="External Manager" identifier="ExternalControlViewController" storyboardIdentifier="ExternalControlViewController" showSeguePresentationStyle="single" id="s6y-wL-pnr" userLabel="External Control" customClass="ExternalControlViewController" customModule="Klash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Gao-fa-Dwr">
                         <rect key="frame" x="0.0" y="0.0" width="516" height="268"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -1521,7 +1517,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="urlCell" id="hgu-Ez-7fj">
-                                                            <rect key="frame" x="197.06696397039059" y="1" width="188" height="28"/>
+                                                            <rect key="frame" x="197" y="1" width="188" height="28"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-RN-Pkz">
@@ -1563,7 +1559,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="secretCell" id="1lj-rr-UvU">
-                                                            <rect key="frame" x="388.13392794078118" y="1" width="52" height="22"/>
+                                                            <rect key="frame" x="388" y="1" width="52" height="22"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="T9c-i1-UF2">
@@ -1686,7 +1682,7 @@
         <!--Debug-->
         <scene sceneID="uyL-8z-i0d">
             <objects>
-                <viewController title="Debug" showSeguePresentationStyle="single" id="kdV-Em-qBi" customClass="DebugSettingViewController" customModule="ClashX_Meta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Debug" showSeguePresentationStyle="single" id="kdV-Em-qBi" customClass="DebugSettingViewController" customModule="Klash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" misplaced="YES" id="mud-rj-Isy">
                         <rect key="frame" x="0.0" y="0.0" width="416" height="412"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2022,7 +2018,7 @@
         <!--Global ShortCut-->
         <scene sceneID="723-vr-5MK">
             <objects>
-                <viewController title="Global ShortCut" showSeguePresentationStyle="single" id="wKZ-TE-sf8" customClass="GlobalShortCutViewController" customModule="ClashX_Meta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Global ShortCut" showSeguePresentationStyle="single" id="wKZ-TE-sf8" customClass="GlobalShortCutViewController" customModule="Klash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="6Ss-22-m8j">
                         <rect key="frame" x="0.0" y="0.0" width="507" height="414"/>
                         <autoresizingMask key="autoresizingMask"/>

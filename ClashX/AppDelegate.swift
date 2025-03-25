@@ -109,7 +109,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self.dashboardMenuItem.isHidden = true
             self.connectionsMenuItem.isHidden = true
         }
-        AppVersionUtil.showUpgradeAlert()
+        // AppVersionUtil.showUpgradeAlert()
         ICloudManager.shared.setup()
 
         if WebPortalManager.hasWebProtal {

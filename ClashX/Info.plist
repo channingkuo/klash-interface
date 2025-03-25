@@ -2,16 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDisplayName</key>
-	<string>Klash</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>ClashX use location info to detect your current WiFi network SSID name and provide the auto suspend services.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>ClashX use location info to detect your current WiFi network SSID name and provide the auto suspend services.</string>
 	<key>BETA</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Klash</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -38,7 +34,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
+	<string>v1.2.5</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -67,7 +63,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<string>0</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -97,6 +93,10 @@
 	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2025年 ChanningKuo. All rights reserved.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>ClashX use location info to detect your current WiFi network SSID name and provide the auto suspend services.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>ClashX use location info to detect your current WiFi network SSID name and provide the auto suspend services.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
@@ -128,11 +128,13 @@
 		<key>com.west2online.ClashX.ProxyConfigHelper</key>
 		<string>anchor apple generic and identifier &quot;com.metacubex.ClashX.ProxyConfigHelper&quot; and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = MEWHFZ92DY)</string>
 	</dict>
-	<key>SUDisallowSelectChannel</key>
-	<false/>
-	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/MetaCubeX/clashX.meta/refs/heads/sparkle/appcast.xml</string>
-	<key>SUPublicEDKey</key>
-	<string>Jhu0RI5Vp02om6JhxYnFewD82GCV8v7U05toMFXb+7U=</string>
+	<key>buildTime</key>
+	<string>2025-03-25 16:56</string>
+	<key>coreVersion</key>
+	<string>1.19.3</string>
+	<key>gitBranch</key>
+	<string>master</string>
+	<key>gitCommit</key>
+	<string></string>
 </dict>
 </plist>

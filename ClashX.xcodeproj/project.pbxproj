@@ -55,7 +55,6 @@
 		01BCDB1A2C9ECD010028FA94 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BCDAE72C9ECD010028FA94 /* SidebarView.swift */; };
 		01BCDB1B2C9ECD010028FA94 /* SidebarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BCDAE52C9ECD010028FA94 /* SidebarLabel.swift */; };
 		01BCDB1D2C9EE2CF0028FA94 /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BCDB1C2C9EE2CF0028FA94 /* ProgressButton.swift */; };
-		01BCDB212C9EEE260028FA94 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 01BCDB202C9EEE260028FA94 /* Sparkle */; };
 		01CA6BC12B6A1B3100E386D6 /* MetaServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA6BBF2B6A1B3100E386D6 /* MetaServer.swift */; };
 		01CA6BC22B6A1B3100E386D6 /* MetaServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA6BBF2B6A1B3100E386D6 /* MetaServer.swift */; };
 		01D567E42AD158B600CDA0AE /* MetaPrefs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D567E12AD158B500CDA0AE /* MetaPrefs.storyboard */; };
@@ -398,7 +397,6 @@
 				01F336292AD10D0B0048AF77 /* PromiseKit in Frameworks */,
 				01BCDAAC2C9ECB3A0028FA94 /* DSFSparkline in Frameworks */,
 				01F3362A2AD10D0B0048AF77 /* KeyboardShortcuts in Frameworks */,
-				01BCDB212C9EEE260028FA94 /* Sparkle in Frameworks */,
 				01F3362B2AD10D0B0048AF77 /* Alamofire in Frameworks */,
 				01F3362C2AD10D0B0048AF77 /* CocoaLumberjack in Frameworks */,
 				01F3362D2AD10D0B0048AF77 /* Yams in Frameworks */,
@@ -901,7 +899,6 @@
 				01F335CA2AD10D0B0048AF77 /* PromiseKit */,
 				01BCDAAB2C9ECB3A0028FA94 /* DSFSparkline */,
 				01BCDAB22C9ECB560028FA94 /* SwiftUIIntrospect */,
-				01BCDB202C9EEE260028FA94 /* Sparkle */,
 			);
 			productName = ClashX;
 			productReference = B085A0F52D92637B003ACE9C /* Klash.app */;
@@ -965,7 +962,6 @@
 				015B97842A4F31AE00F9FA4D /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				01BCDAAA2C9ECB3A0028FA94 /* XCRemoteSwiftPackageReference "DSFSparkline" */,
 				01BCDAB12C9ECB560028FA94 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
-				01BCDB1F2C9EEE260028FA94 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			productRefGroup = 49CF3B1E20CD7463001EBF94 /* Products */;
 			projectDirPath = "";
@@ -1610,14 +1606,6 @@
 				minimumVersion = 1.3.0;
 			};
 		};
-		01BCDB1F2C9EEE260028FA94 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.4;
-			};
-		};
 		01F335B72AD10D0B0048AF77 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts.git";
@@ -1718,11 +1706,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 01BCDAB12C9ECB560028FA94 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = SwiftUIIntrospect;
-		};
-		01BCDB202C9EEE260028FA94 /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 01BCDB1F2C9EEE260028FA94 /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
 		};
 		01F335B62AD10D0B0048AF77 /* KeyboardShortcuts */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -37,8 +37,8 @@ class AboutViewController: NSViewController {
         let build = AppVersionUtil.currentBuild
 
         versionLabel.stringValue = "Version: \(version) (\(build))"
-        coreVersionLabel.stringValue = "Meta Core: \(clashCoreVersion)"
-        buildTimeLabel.stringValue = "\(commit)-\(branch) \(buildTime)"
+        coreVersionLabel.stringValue = "Klash Kernel: \(clashCoreVersion)"
+        buildTimeLabel.stringValue = "\(branch) \(buildTime)"
     }
 
     override func viewWillAppear() {
